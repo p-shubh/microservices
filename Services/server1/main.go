@@ -7,5 +7,5 @@ import (
 
 func main() {
 	databaseconnection.Databaseconnection()
-	routes.Routes()
+	routes.RoutesServer1()
 }

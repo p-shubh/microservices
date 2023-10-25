@@ -1,0 +1,20 @@
+# Makefile for Go project
+
+# Variables
+GO := go
+BINARY_NAME := myapp
+MAIN_FILE := D:/p-shubh/p-shubh/microservices/Services/server1/main.go
+
+# Targets and Rules
+all: build
+
+build:
+	$(GO) build -o $(BINARY_NAME) $(MAIN_FILE)
+
+clean:
+	rm -f $(BINARY_NAME)
+
+run: build
+	./$(BINARY_NAME)
+
+.PHONY: all build clean run
