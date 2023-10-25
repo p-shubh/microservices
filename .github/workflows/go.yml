@@ -28,7 +28,7 @@ jobs:
       run: go test -v ./Servers/server1
 
     - name: BuildServer2
-      run: go build -v ./Servers/server2...
+      run: go build -v ./Servers/server2
 
     - name: TestServer2
-      run: go test -v ./Servers/server2...
+      run: go test -v ./Servers/server2
